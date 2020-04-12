@@ -1,4 +1,4 @@
-# Config-BSD-transission-OVPN
+# Config-Freenas-transmission-OVPN
 Collection of my configs for a working Freenas jail with transmission and OpenVPN
 
 ## Create Freenas Transmission Plugin
