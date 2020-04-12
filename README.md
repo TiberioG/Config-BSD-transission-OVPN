@@ -7,14 +7,14 @@ Collection of my configs for a working Freenas jail with transmission and OpenVP
 * Full configuration of the iocage jail is in [config.json](/config.json)
 * Add storage, jail path `/media` , Freenas path `/mnt/disk/Downloads`
 
-## Install OpenVPN in jail
+### Install OpenVPN in jail
 
 ```
 jls
 jexec <Transmission_jail_id>
 pkg update
 pkg upgrade
-pkg install bash openvpn wget nano
+pkg install bash openvpn wget
 ```
 
 ### Edit /etc/rc.conf
@@ -27,7 +27,7 @@ firewall_enable="YES"
 firewall_script="/usr/local/etc/ipfw.rules"
 ```
 
-### Get OpenVPN config
+### Get OpenVPN config and edit it
 * I'm using NordVPN so connect to https://nordvpn.com/servers/tools/ and copy the link of the UDP configuration
 * create file for username and password
 
