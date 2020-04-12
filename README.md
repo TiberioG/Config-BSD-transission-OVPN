@@ -4,7 +4,7 @@ Collection of my configs for a working Freenas jail with transmission and OpenVP
 ## Create Freenas Transmission Plugin
 
 * Use GUI to create, use VNET and set static IP, remember to select `allow_tun = 1,`
-* Full configuration of the iocage jail is in [config.json](../config.json)
+* Full configuration of the iocage jail is in [config.json](/config.json)
 * Add storage, jail path `/media` , Freenas path `/mnt/disk/Downloads`
 
 ## Install OpenVPN in jail
@@ -41,7 +41,7 @@ vi nordvpnauth.txt
 ```
 
 
-* edit [openvpn.conf](/usr/local/etc/openvpn/openvpn.conf)
+* edit /usr/local/etc/openvpn/[openvpn.conf](/usr/local/etc/openvpn/openvpn.conf)
 
 ```
 -dev tun
@@ -53,13 +53,13 @@ vi nordvpnauth.txt
 +auth-user-pass /usr/local/etc/openvpn/nordvpnauth.txt
 ```
 
-* fix problem with tunnel interface, add the following line in [openvpn](/usr/local/etc/rc.d/openvpn) in order to force manual creation of tun interface at openvpn service start
+* fix problem with tunnel interface, add the following line in /usr/local/etc/rc.d/[openvpn](/usr/local/etc/rc.d/openvpn) in order to force manual creation of tun interface at openvpn service start
 
 ```
 ifconfig tun2 create
 ```
 
-## Useful ip getter script [myip](/usr/local/sbin/myip)
+## Useful ip getter script /usr/local/sbin/[myip](/usr/local/sbin/myip)
 ```
 cd /usr/local/sbin
 touch myip
