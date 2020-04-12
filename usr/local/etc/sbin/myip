@@ -1,0 +1,2 @@
+#/bin/csh
+wget http://ipinfo.io/IP -qO -
